@@ -8,8 +8,21 @@
 import scrapy
 
 class MycrawlItem(scrapy.Item):
-    subject = scrapy.Field()
-    contents = scrapy.Field()
-    level = scrapy.Field()
-    searchCount = scrapy.Field(serializer=str)
+    no = scrapy.Field()
+    # title = scrapy.Field()
+    # author = scrapy.Field()
+    # time = scrapy.Field()
+    # readed = scrapy.Field()
+    # voted = scrapy.Field()
     pass
+
+
+# title = scrapy.Field()
+# content = scrapy.Field()
+# page_no = scrapy.Field()
+# uploaded_at = scrapy.Field()
+# comment_count = scrapy.Field()
+# comment = scrapy.Field()
+# view_count = scrapy.Field()
+# good_count = scrapy.Field()
+# bad_count = scrapy.Field()

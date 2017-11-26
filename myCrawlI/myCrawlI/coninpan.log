@@ -1,0 +1,331 @@
+2017-11-26 15:39:50 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: myCrawlI)
+2017-11-26 15:39:50 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'myCrawlI', 'FEED_EXPORT_ENCODING': 'utf-8', 'FEED_FORMAT': 'json', 'FEED_URI': './conitalk.json', 'LOG_FILE': 'coninpan.log', 'NEWSPIDER_MODULE': 'myCrawlI.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['myCrawlI.spiders']}
+2017-11-26 15:39:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-26 15:39:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-26 15:39:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-26 15:39:50 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-11-26 15:39:50 [scrapy.core.engine] INFO: Spider opened
+2017-11-26 15:39:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-26 15:39:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6048
+2017-11-26 15:39:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/robots.txt> (referer: None)
+2017-11-26 15:39:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard> (referer: None)
+2017-11-26 15:39:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=851> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=851>
+{'comment_count': '21',
+ 'subject': '비트렉스 모든종목 펌핑 바로바로 체크 오토봇 출시했습니다. CDT bot 사용후기 올려드려요',
+ 'user_id': '비렉봇',
+ 'view_count': '1,142',
+ 'write_date': '2017-10-25'}
+2017-11-26 15:39:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=beginner&wr_id=3322> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=beginner&wr_id=3322>
+{'comment_count': '1',
+ 'subject': '[코빗]비트코인 다이아몬드 (BCD) 관련 안내 / Bitcoin Diamond (BCD) Hard Fork',
+ 'user_id': '코인코인',
+ 'view_count': '210',
+ 'write_date': '2017-11-24'}
+2017-11-26 15:39:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7419> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7419>
+{'comment_count': '6',
+ 'subject': '으 쫄깃쫄깃하네여;;',
+ 'user_id': '코인코인',
+ 'view_count': '150',
+ 'write_date': '2017-11-24'}
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7427> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=coinnews&wr_id=3908> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7427>
+{'comment_count': '7',
+ 'subject': '비트클럽 풀이 캐쉬 채굴에 등장했내요',
+ 'user_id': '코인코인',
+ 'view_count': '295',
+ 'write_date': '2017-11-24'}
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7560> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=coinnews&wr_id=3908>
+{'comment_count': '0',
+ 'subject': '비트코인 이외 주목 받는 7가지 암호화폐',
+ 'user_id': 'coinbreakingnews',
+ 'view_count': '160',
+ 'write_date': '2017-11-24'}
+2017-11-26 15:39:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7560>
+{'comment_count': '2',
+ 'subject': '업비트 비트코인캐시 호가창보고있는데;;',
+ 'user_id': '캐망키',
+ 'view_count': '161',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7572> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7572>
+{'comment_count': '2',
+ 'subject': '하..',
+ 'user_id': '코인코인',
+ 'view_count': '83',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7573> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7573>
+{'comment_count': '3',
+ 'subject': '(펌) 코인 6년차 7억먹은 선배로서 코인에서 돈번 부류는',
+ 'user_id': '주작천사',
+ 'view_count': '293',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7565> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7565>
+{'comment_count': '2',
+ 'subject': "(펌) 코인학개론 '1장 주식과 코인의 차이'",
+ 'user_id': '자유의지',
+ 'view_count': '126',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7578> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7578>
+{'comment_count': '6',
+ 'subject': '왜 비트코인 핵심개발자 지미 송은 BTG를 알아야한다고 했을까?',
+ 'user_id': '코인천사',
+ 'view_count': '173',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7420> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7420>
+{'comment_count': '16',
+ 'subject': '슬러시풀, 블록생성 중단',
+ 'user_id': '코인코인',
+ 'view_count': '1,164',
+ 'write_date': '2017-11-24'}
+2017-11-26 15:39:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7564> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7564>
+{'comment_count': '1',
+ 'subject': '여기는 루머가 진실이되는경우가 많더군요',
+ 'user_id': '자유의지',
+ 'view_count': '136',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7568> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7568>
+{'comment_count': '0',
+ 'subject': '이번 주말은',
+ 'user_id': '펌킨슾',
+ 'view_count': '101',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=greeting&wr_id=1017> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=greeting&wr_id=1017>
+{'comment_count': '0',
+ 'subject': '가입인사 입니다.',
+ 'user_id': '벅짱',
+ 'view_count': '12',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7590> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7590>
+{'comment_count': '2',
+ 'subject': '금값은 계속 떨어질거 같나요?',
+ 'user_id': '대한민국만세',
+ 'view_count': '84',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7593> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7593>
+{'comment_count': '4',
+ 'subject': '이클 하드포크 카운트 다운시작이랍니다 !',
+ 'user_id': 'coinbreakingnews',
+ 'view_count': '148',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7574> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7574>
+{'comment_count': '0',
+ 'subject': '업비트 잡알트 상승률 feat 대박의꿈',
+ 'user_id': '주작천사',
+ 'view_count': '129',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7540> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7540>
+{'comment_count': '3',
+ 'subject': '곧 받게될 비트코인다이아몬드 시세',
+ 'user_id': '꿈꾸는식물',
+ 'view_count': '257',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7596> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7596>
+{'comment_count': '1',
+ 'subject': '안정적으로 월20% 수익',
+ 'user_id': '리얼헤븐',
+ 'view_count': '137',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7600> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7600>
+{'comment_count': '2',
+ 'subject': '대형 코인들이 다오를 기미를 보이니',
+ 'user_id': '짤짤이',
+ 'view_count': '117',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7594> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7594>
+{'comment_count': '5',
+ 'subject': '이클 하드포크 관련 내용 - 이클 가격이 올라가는 이유',
+ 'user_id': 'coinbreakingnews',
+ 'view_count': '209',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=greeting&wr_id=1016> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=greeting&wr_id=1016>
+{'comment_count': '0',
+ 'subject': '재밌게 즐겨봅시다~',
+ 'user_id': 'hyukyoo',
+ 'view_count': '18',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7604> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7604>
+{'comment_count': '0',
+ 'subject': '정보나눔합니다~코인의세계는 정보입수가 포인트 !!',
+ 'user_id': '흑두루미대장',
+ 'view_count': '74',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7597> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7597>
+{'comment_count': '3',
+ 'subject': '계속된 비트코인 분리 원인과 전략',
+ 'user_id': '코인천사',
+ 'view_count': '128',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7629> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7629>
+{'comment_count': '1',
+ 'subject': '제가 간것만 상승없네요',
+ 'user_id': '꽃을든소년',
+ 'view_count': '53',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7607> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7607>
+{'comment_count': '1',
+ 'subject': '주말에 거래량이 많은건가요?',
+ 'user_id': '구겨진셔츠',
+ 'view_count': '44',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=notice&wr_id=828> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7633> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=notice&wr_id=828>
+{'comment_count': '114',
+ 'subject': '코인톡에서 10,000개 리플코인 쏩니다!  누구나 참가가능, 누구나 지급[코인톡 이벤트]',
+ 'user_id': '코인톡관리자',
+ 'view_count': '4,415',
+ 'write_date': '2017-10-24'}
+2017-11-26 15:39:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7633>
+{'comment_count': '0',
+ 'subject': '대형 거래소 답게 움직여라',
+ 'user_id': 'coinbreakingnews',
+ 'view_count': '62',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7642> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7642>
+{'comment_count': '1',
+ 'subject': '오늘은 관망하는 것도 좋을 듯...',
+ 'user_id': '오더',
+ 'view_count': '72',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7637> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7637>
+{'comment_count': '1',
+ 'subject': '자고일어나도 비캐는',
+ 'user_id': '펌킨슾',
+ 'view_count': '82',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7571> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7571>
+{'comment_count': '2',
+ 'subject': '억만장자 노보그라츠가 비트코인 년말에 $10,000예상하네요',
+ 'user_id': '코인코인',
+ 'view_count': '145',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=6873> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7592> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=6873>
+{'comment_count': '108',
+ 'subject': '코인톡에서 10,000개 리플코인 쏩니다!  누구나 참가가능, 누구나 지급[코인톡 이벤트]',
+ 'user_id': '코인톡관리자',
+ 'view_count': '3,437',
+ 'write_date': '2017-10-24'}
+2017-11-26 15:39:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7592>
+{'comment_count': '0',
+ 'subject': '이번 주말도 이렇게 흘러가내요',
+ 'user_id': '펌킨슾',
+ 'view_count': '69',
+ 'write_date': '2017-11-25'}
+2017-11-26 15:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7631> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7631>
+{'comment_count': '5',
+ 'subject': '리플이 나를때가 된 것 같습니다',
+ 'user_id': 'coinbreakingnews',
+ 'view_count': '101',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7657> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7657>
+{'comment_count': '0',
+ 'subject': '비트코인다이아',
+ 'user_id': '벅짱',
+ 'view_count': '23',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7632> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:39:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7632>
+{'comment_count': '1',
+ 'subject': 'RDN에 이어 COB를 소개합니다, Cointalk에서만 공개',
+ 'user_id': 'coinbreakingnews',
+ 'view_count': '36',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:40:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7658> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:40:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7658>
+{'comment_count': '0',
+ 'subject': '비트 1010만 돌파 했네 ㅎ ㄷㄷ',
+ 'user_id': '우뢰매',
+ 'view_count': '13',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:40:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7651> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:40:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=7651>
+{'comment_count': '3',
+ 'subject': '비트 적막속에 뭔가 터질듯',
+ 'user_id': '우뢰매',
+ 'view_count': '46',
+ 'write_date': '2017-11-26'}
+2017-11-26 15:40:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=6750> (referer: http://cointalk.co.kr/bbs/board.php?bo_table=freeboard)
+2017-11-26 15:40:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://cointalk.co.kr/bbs/board.php?bo_table=freeboard&wr_id=6750>
+{'comment_count': '122',
+ 'subject': '코인톡 포인트 정책 V1.3 및 포인트별 계급 정보',
+ 'user_id': '코인톡관리자',
+ 'view_count': '2,429',
+ 'write_date': '2017-03-21'}
+2017-11-26 15:40:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-11-26 15:40:01 [scrapy.extensions.feedexport] INFO: Stored json feed (39 items) in: ./conitalk.json
+2017-11-26 15:40:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 18561,
+ 'downloader/request_count': 41,
+ 'downloader/request_method_count/GET': 41,
+ 'downloader/response_bytes': 6776236,
+ 'downloader/response_count': 41,
+ 'downloader/response_status_count/200': 41,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 26, 6, 40, 1, 1755),
+ 'item_scraped_count': 39,
+ 'log_count/DEBUG': 81,
+ 'log_count/INFO': 8,
+ 'memusage/max': 51105792,
+ 'memusage/startup': 51105792,
+ 'request_depth_max': 1,
+ 'response_received_count': 41,
+ 'scheduler/dequeued': 40,
+ 'scheduler/dequeued/memory': 40,
+ 'scheduler/enqueued': 40,
+ 'scheduler/enqueued/memory': 40,
+ 'start_time': datetime.datetime(2017, 11, 26, 6, 39, 50, 635919)}
+2017-11-26 15:40:01 [scrapy.core.engine] INFO: Spider closed (finished)

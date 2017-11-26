@@ -3,25 +3,44 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from myCrawl.items import MycrawlItem
+from scrapy.http import FormRequest
+import re
+import config
+from myCrawl.loaders import ChatLoader
 
 class CoinpanSpider(CrawlSpider):
     name = 'coinpan'
     allowed_domains = ['coinpan.com']
-    start_urls = ['http://coinpan.com/index.php?mid=free&page=1']
-
+    start_urls = ['https://coinpan.com/index.php?mid=index&act=dispMemberLoginForm']
     rules = (
-        Rule(LinkExtractor(allow=('index.php\?mid=free&page=\d+$', )), follow=True),
-        Rule(LinkExtractor(allow=('document_srl=\d+',)), callback="parse_item")
+        Rule(LinkExtractor(allow=('/free$', 'index.php?mid=coin_info&page=\d+$', )), callback="parse_item"),
+        # Rule(LinkExtractor(allow=('/free/\d+$', 'document_srl=\d+',)), callback="parse_item")
     )
 
+    def parse_start_url(self, response):
+        self.logger.info('request login!')
+        return FormRequest.from_response(
+            response,
+            formdata={'user_id': config.ID, 'password': config.PASSWORD},
+            formxpath='//fieldset'
+        )
+
     def parse_item(self, response):
-        print('Current page is "%s"' % response.url)
+        l = ChatLoader(item=MycrawlItem(), response=response)
+        l.add_xpath('title', '//div[@class="read_header"]//a/text()')
+        l.add_xpath('page_no', '//p[@class="perlink"]//@href', re='coinpan.com/(\d+)')
+        l.add_xpath('content', '//div[@class="read_body"]//div[contains(@class, "xe_content")]')
+        l.add_xpath('comment', '//div[@id="comment"]//div[contains(@class, "xe_content")]/text()')
 
-        item = MycrawlItem()
-        item['subject'] = response.xpath('//div[contains(@class, "read_header")]/h1/a/text()').extract()
-        item['contents'] = response.xpath('//div[contains(@class, "read_body")]/div/p/text()').extract()
-        item['level'] = response.xpath('//ul[contains(@class, "wt_box gray_color")]/li/a/img//@alt').extract()
-        item['searchCount'] = response.xpath('//li[contains(@class, "right")]/a/span/b/text()').extract()
+        header = l.nested_xpath('//*[@id="board_list"]/table/tbody/tr')
 
-        print(item)
-        return item
+
+        header = l.nested_xpath('//ul[@class="wt_box gray_color"]//li')
+        header.add_xpath('uploaded_at', '//span', re='\d{4}\.\d{2}\.\d{2}\W+\d{2}:\d{2}')
+        header.add_xpath('comment_count', 'a[@href="#comment"]//b/text()')
+
+        header.add_xpath('good_count', '//a[contains(text(), "추천")]//b/text()')
+        header.add_xpath('bad_count', '//a[contains(text(), "비추천")]//b/text()')
+        header.add_xpath('view_count', '//a[contains(text(), "조회")]//b/text()')
+
+        return l.load_item()
